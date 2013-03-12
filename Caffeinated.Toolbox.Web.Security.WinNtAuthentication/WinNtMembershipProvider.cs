@@ -1,4 +1,4 @@
-﻿namespace Caffeinated.Toolbox.Web.Security.MembershipProviders
+﻿namespace Caffeinated.Toolbox.Web.Security.WinNtAuthentication
 {
     using System;
     using System.Collections.Specialized;
