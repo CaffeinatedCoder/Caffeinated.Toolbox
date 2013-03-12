@@ -7,11 +7,10 @@
     <ProjectGuid>{6B1FBC88-341E-4E1E-BCAF-60CC2E7C7F81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Caffeinated.Toolbox.Web.Security.MembershipProviders</RootNamespace>
-    <AssemblyName>Caffeinated.Toolbox.Web.Security.MembershipProviders</AssemblyName>
+    <RootNamespace>Caffeinated.Toolbox.Web.Security.WinNtAuthentication</RootNamespace>
+    <AssemblyName>Caffeinated.Toolbox.Web.Security.WinNtAuthentication</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageOutputPath Condition="'$(NuGetPackageOutputPath)'==''">$(SolutionDir)\build\nuget</NuGetPackageOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,16 +40,8 @@
     <Compile Include="WinNtMembershipProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Caffeinated.Toolbox.Web.Security.MembershipProviders.nuspec" />
+    <None Include="Caffeinated.Toolbox.Web.Security.WinNtAuthentication.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  -->
-  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
-    <MakeDir Condition="!Exists('$(NuGetPackageOutputPath)')" Directories="$(NuGetPackageOutputPath)"/>
-    <Exec Command="..\.nuget\NuGet.exe pack $(MSBuildProjectFile) -OutputDirectory ..\build\nuget -sym" />
-  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" />
 </Project>
