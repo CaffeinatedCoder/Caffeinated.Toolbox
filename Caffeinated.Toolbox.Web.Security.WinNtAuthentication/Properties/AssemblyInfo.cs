@@ -2,20 +2,18 @@
 using System.Resources;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Caffeinated.Toolbox.Web.Security.MembershipProviders")]
-[assembly: AssemblyDescription("Provides special ASP.NET membership providers, " +
-                               "e.g. WinNtMembershipProvider for authentication against local Windows user accounts.")]
+[assembly: AssemblyTitle("Caffeinated.Toolbox.Web.Security.WinNtAuthentication")]
+[assembly: AssemblyDescription("Provides WinNtMembershipProvider to enable ASP.NET based web applications to authenticate against local Windows user accounts.")]
 
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
 #else
-
 [assembly: AssemblyConfiguration("Release")]
 #endif
 
 
 [assembly: AssemblyCompany("CaffeinatedCoder")]
-[assembly: AssemblyProduct("Caffeinated.Toolbox.Web.Security.MembershipProviders")]
+[assembly: AssemblyProduct("Caffeinated.Toolbox.Web.Security.WinNtAuthentication")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
