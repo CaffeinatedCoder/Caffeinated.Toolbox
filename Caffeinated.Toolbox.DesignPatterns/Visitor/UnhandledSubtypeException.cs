@@ -3,7 +3,6 @@
     using System;
 
     /// <summary>
-    /// 
     /// </summary>
     internal sealed class UnhandledSubtypeException : Exception
     {

@@ -3,7 +3,8 @@ using System.Resources;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Caffeinated.Toolbox.DesignPatterns")]
-[assembly: AssemblyDescription("")]
+[assembly:
+    AssemblyDescription("A little framework to be useful for the implementation of several design patterns in .NET.")]
 
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
